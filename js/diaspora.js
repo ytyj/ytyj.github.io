@@ -417,8 +417,28 @@ $(function() {
 					{typed.destroy(); typed = null;}
 				else{
 					if($("#hitokoto").data('st') == true){
+                        // console.log($path, '---------')
+                        // https://v1.hitokoto.cn/
 						$.get("https://v1.hitokoto.cn/", function (data) {
+                        var textArr = [{
+                            hitokoto: 'hahahhaha',
+                            from: 'zzz',
+                        },
+                        {
+                            hitokoto: '2',
+                            from: 'zzz',
+                        },
+                        {
+                            hitokoto: '3',
+                            from: 'zzz',
+                        },{
+                            hitokoto: '4',
+                            from: 'zzz',
+                        }]
 						var data = data;
+                        var num = parseInt(Math.random()* (textArr.length))
+                        data = textArr[num]
+                        console.log(data, '========data')
 						var str =  data.hitokoto + " ——  By "		
 						var options = {
 						  strings: [ 

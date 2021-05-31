@@ -421,25 +421,25 @@ $(function() {
                         // https://v1.hitokoto.cn/
 						$.get("https://v1.hitokoto.cn/", function (data) {
                         var textArr = [{
-                            hitokoto: 'hahahhaha',
-                            from: 'zzz',
+                            hitokoto: '看到你握笔的样子，书中的好几万字为汤汤同学让出了久珍其间的页缘白。',
+                            from: '我也藏了页缘白要送给你',
                         },
                         {
-                            hitokoto: '2',
-                            from: 'zzz',
+                            hitokoto: 'ヾ(o◕∀◕)ﾉヾ (๑ºั╰╯ºั๑) ✧(≖ ◡ ≖✿) ( ๑╹ ꇴ╹) ｸﾞｯ!(๑•̀ㅂ•́) ✧ (*˘︶˘*).｡.:*♡ (^_^メ) y∩__∩y (￣へ￣) (๑＞ ＜)☆ (ღ˘⌣˘ღ) (๑•́ωก̀๑) _(-ω-`_)⌒)_',
+                            from: '(/ω＼)',
                         },
                         {
-                            hitokoto: '3',
-                            from: 'zzz',
+                            hitokoto: '2021年6月1日。',
+                            from: '你好呀，汤汤同学。',
                         },{
-                            hitokoto: '4',
-                            from: 'zzz',
+                            hitokoto: '君在高阁曳舞兮，长阙红尘最佳人。',
+                            from: '怜赜',
                         }]
 						var data = data;
                         var num = parseInt(Math.random()* (textArr.length))
                         data = textArr[num]
                         console.log(data, '========data')
-						var str =  data.hitokoto + " ——  By "		
+						var str =  data.hitokoto + " ——  "		
 						var options = {
 						  strings: [ 
 							//str + "Who??^1000",
